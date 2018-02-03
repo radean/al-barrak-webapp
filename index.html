@@ -88,21 +88,21 @@
               </p>
             </div>
           </div>
+        </div>
           <!--Second Half on About Section-->
           <div class="row">
-            <!--Slider-->
-            <div class="three wide column">
-              <div class="center aligned column">
-                <img src="images/templates/semantic-ui/wireframe/white-image.png" />
+              <!--Slider-->
+              <div class="ui grid">
+                  <div class="five wide column">
+                      <div class="owl-carousel owl-theme">
+                          <div> <img src="images/about/01.jpg" /> </div>
+                          <div> <img src="images/about/02.jpg" /> </div>
+                          <div> <img src="images/about/03.jpg" /> </div>
+                          <div> <img src="images/about/04.jpg" /> </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <!--Features-->
-            <div class="three wide column">
-              <div class="center aligned column">
-                <img src="images/templates/semantic-ui/wireframe/white-image.png" />
-              </div>
-            </div>
-          </div>
+          <!--Features-->
           <div class="row">
             <div class="center aligned column">
               <a class="ui huge button">Check Them Out</a>
@@ -184,8 +184,9 @@
         </div>
       </div>
     </div>
+    <script src="dist/jquery/jquery.min.js"></script>
     <script src="dist/semantic-ui/semantic.min.js"></script>
-    <script src="dist/owl.carousel.min.js"></script>
+    <script src="dist/owl.carousel.js"></script>
     <style type="text/css">
       .hidden.menu {
         display: none;
@@ -287,7 +288,13 @@
               }
             })
           ;
-      
+          $('.owl-carousel').owlCarousel({
+              items:1,
+              loop:true,
+              margin:10,
+              nav:false
+
+          });
           // create sidebar and attach to menu open
           $('.ui.sidebar')
             .sidebar('attach events', '.toc.item')
