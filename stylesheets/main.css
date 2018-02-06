@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 900 !important;
 }
+.sleakFont {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 100 !important;
+}
 .bigHeading {
     color: #d7d7d7 !important;
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
@@ -12,4 +16,19 @@
 }
 body {
     font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/*images Paralax*/
+.parallexImage {
+    background-image: url("../images/counterBg.jpg");
+    background-attachment: fixed;
+}
+/*Images Animations*/
+.image img:hover {
+    transition: .2s ease-out;
+    -webkit-box-shadow: 0 0 20px #979797;
+    -moz-box-shadow: 0 0 20px #979797;
+    box-shadow: 0 0 20px #979797;
+    transform: scale(1.02,1.02);
 }
