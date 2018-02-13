@@ -14,6 +14,16 @@
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
     font-size: 100px !important;
 }
+.bigSuperHeading {
+    color: #FFF !important;
+    /*text-shadow: 4px 8px 16px #e1e1e1;*/
+    font-size: 75px !important;
+}
+.bigSubHeading {
+    color: #d5d5d5 !important;
+    /*text-shadow: 4px 8px 16px #e1e1e1;*/
+    font-size: 50px !important;
+}
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -37,7 +47,11 @@ hr {
     background-attachment: fixed;
     background-size: contain;
 }
-
+.pointsImage {
+    background-image: url("../images/pointsBG.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
 .membersImage {
     background-image: url("../images/membersBg.jpg");
     background-attachment: fixed;
@@ -52,6 +66,10 @@ hr {
 .dark-grey {
     color: #EBEBEB !important;
     background-color: #2a2a2b !important;
+}
+/*White*/
+.white-text {
+    color: #EBEBEB !important;
 }
 /*Teal*/
 .dark-teal {
