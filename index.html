@@ -41,13 +41,13 @@
     <!--Page Contents-->
     <div class="pusher">
       <!--Marquee Stripe-->
-      <div id="header"></div>
+      <div id="header" class="ui fixed"></div>
       <!--First Slider-->
       <!--Landing First View-->
-      <div class="ui inverted vertical masthead center aligned" >
+      <div class="ui inverted vertical masthead center aligned">
         <!--<div class="ui container">-->
           <!--Navigation -->
-          <div id="navBar"></div>
+          <!--<div id="navBar"></div>-->
         <!--</div>-->
           <div class="main-carousel owl-carousel owl-theme">
               <div> <img src="images/broadcast/trucks.jpg" /> </div>
@@ -622,7 +622,7 @@
     </style>
     <!--Initialize Script-->
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE">
     </script>
     <!--GUIS-->
     <script>
@@ -645,27 +645,26 @@
           });
           this.destroy();
       }, {offset: '90%'});
-      $(document)
-        .ready(function() {
-          // fix menu when passed
-          $('.masthead')
-            .visibility({
-              once: false,
-              onBottomPassed: function() {
-                $('.fixed.menu').transition('fade in');
-              },
-              onBottomPassedReverse: function() {
-                $('.fixed.menu').transition('fade out');
-              }
-            })
-          ;
+      $(document).ready(function() {
 //          UI Initialize
-//            Installing Temps
-//            Header
             $('#header').load('dist/temps/header.html', function () {
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function() {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function() {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    });
             });
 //            Navigation bar
             $('#navBar').load('dist/temps/navBar.html', function () {
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
             });
 //            Footer
             $('#footer').load('dist/temps/footer.html', function () {
@@ -896,13 +895,7 @@
             });
             $('.ui.accordion')
                 .accordion()
-            ;
-          // create sidebar and attach to menu open
-          $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-          ;
-        })
-      ;
+          })
     </script>
   </body>
 </html>
