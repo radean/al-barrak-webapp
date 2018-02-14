@@ -21,19 +21,19 @@
   </head>
   <body>
     <!--Hidden Main Header-->
-    <div class="ui large top fixed hidden menu">
-      <div class="ui container">
-        <a class="active item">Home</a><a class="item">About us</a><a class="item">Services</a><a class="item">Members</a>
-        <div class="right menu">
-          <div class="item">
-            <a class="ui button">Log in</a>
-          </div>
-          <div class="item">
-            <a class="ui primary button">Sign Up</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--<div class="ui large top fixed hidden menu">-->
+      <!--<div class="ui container">-->
+        <!--<a class="active item">Home</a><a class="item">About us</a><a class="item">Services</a><a class="item">Members</a>-->
+        <!--<div class="right menu">-->
+          <!--<div class="item">-->
+            <!--<a class="ui button">Log in</a>-->
+          <!--</div>-->
+          <!--<div class="item">-->
+            <!--<a class="ui primary button">Sign Up</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
     <!--Sidebar Menu-->
     <div class="ui vertical inverted sidebar menu">
       <a class="active item">Home</a><a class="item">Work</a><a class="item">Company</a><a class="item">Careers</a><a class="item">Login</a><a class="item">Signup</a>
@@ -395,6 +395,20 @@
 //            Installing Temps
 //            Header
             $('#header').load('dist/temps/header.html', function () {
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                ;
+            });
+            $('.main-carousel').owlCarousel({
+                items:1,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                loop:true,
+                margin:0,
+                nav:false,
+                dots: false
+
             });
 //            Navigation bar
             $('#navBar').load('dist/temps/navBar.html', function () {
@@ -607,12 +621,8 @@
 //            Members Carousel
 
             $('.ui.accordion')
-                .accordion()
-            ;
-          // create sidebar and attach to menu open
-          $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-          ;
+                .accordion();
+
         })
       ;
     </script>
