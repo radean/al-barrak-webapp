@@ -33,6 +33,15 @@ hr {
     content: 'div';
 }
 
+.ui.menu {
+    margin: 0rem !important;
+}
+.top-fixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
 .members-carousel img {
     border: 1px solid #000;
     margin: 20px;
