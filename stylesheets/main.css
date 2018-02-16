@@ -54,7 +54,7 @@ hr {
 .counterImage {
     background-image: url("../images/counterBg.jpg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 .pointsImage {
     background-image: url("../images/pointsBG.jpg");
