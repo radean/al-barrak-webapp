@@ -21,24 +21,11 @@
   </head>
   <body>
     <!--Hidden Main Header-->
-    <!--<div class="ui large top fixed hidden menu">-->
-      <!--<div class="ui container">-->
-        <!--<a class="active item">Home</a><a class="item">About us</a><a class="item">Services</a><a class="item">Members</a>-->
-        <!--<div class="right menu">-->
-          <!--<div class="item">-->
-            <!--<a class="ui button">Log in</a>-->
-          <!--</div>-->
-          <!--<div class="item">-->
-            <!--<a class="ui primary button">Sign Up</a>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
     <div id="sideBar" ></div>
     <!--Page Contents-->
     <div class="pusher">
       <!--Marquee Stripe-->
-      <div id="header" class="top-fixed"></div>
+      <div id="header"></div>
       <!--First Slider-->
       <!--Landing First View-->
       <div class="ui inverted vertical masthead center aligned" >
@@ -180,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="extra content">
-                                <a>
+                                <a href="shipping.html">
                                     <i class="book large icon"></i>
                                     READ MORE
                                 </a>
@@ -361,7 +348,7 @@
             <!--Features-->
       </div>
         <!--Counter Slide-->
-      <div class="ui vertical stripe counterImage" id="counters">
+      <div class="ui vertical stripe parallax-window" data-parallax="scroll" data-image-src="images/counterBg.jpg" id="counters">
             <div class="ui grid large inverted statistics">
                 <!--Four Columns in about Defination-->
                 <div class="sixteen wide mobile six wide tablet four wide computer column">
@@ -531,6 +518,7 @@
     <script src="dist/owl.carousel.js"></script>
     <script src="dist/aos.js"></script>
     <script src="dist/jquery.waypoints.js"></script>
+    <script src="dist/parallax.min.js"></script>
     <style type="text/css">
       .hidden.menu {
         display: none;
