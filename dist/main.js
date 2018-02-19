@@ -1,22 +1,59 @@
-AOS.init();
-$('#counters').waypoint( function () {
-    console.log('clicks')
-//            Removing TextHidden Class
-    $('.count').removeClass('textHidden')
-//            Animated Counter
-    $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 5000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
+
+$.getScript("dist/parallax.min.js", function (){
+    // After load
+});
+$.getScript("dist/aos.js", function (){
+    AOS.init();
+});
+$.getScript("dist/owl.carousel.js", function (){
+    $('.main-carousel').owlCarousel({
+        items:1,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        loop:true,
+        margin:0,
+        nav:false,
+        dots: false
+
     });
-    this.destroy();
-}, {offset: '90%'});
+//            Members Carousel
+    $('.members-carousel').owlCarousel({
+        items:4,
+        autoplay: true,
+        center: false,
+        autoplayTimeout: 2500,
+        loop:true,
+        margin:40,
+        nav:false,
+        dots: false
+
+    });
+    $('.ui.accordion')
+        .accordion()
+});
+$.getScript("dist/jquery.waypoints.js", function (){
+    $('#counters').waypoint( function () {
+        console.log('clicks')
+//            Removing TextHidden Class
+        $('.count').removeClass('textHidden')
+//            Animated Counter
+        $('.count').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 5000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+        this.destroy();
+    }, {offset: '90%'});
+});
+
+
+
 $(document).ready(function() {
 //          UI Initialize
     $('#header').load('dist/temps/header.html', function () {
@@ -243,28 +280,4 @@ $(document).ready(function() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
     });
 //            Main Carousel
-    $('.main-carousel').owlCarousel({
-        items:1,
-        autoplay: true,
-        autoplayTimeout: 3500,
-        loop:true,
-        margin:0,
-        nav:false,
-        dots: false
-
-    });
-//            Members Carousel
-    $('.members-carousel').owlCarousel({
-        items:4,
-        autoplay: true,
-        center: false,
-        autoplayTimeout: 2500,
-        loop:true,
-        margin:40,
-        nav:false,
-        dots: false
-
-    });
-    $('.ui.accordion')
-        .accordion()
 })
