@@ -33,6 +33,15 @@
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
     font-size: 10px !important;
 }
+.floated {
+    position: fixed;
+    color: white;
+    right: 0%;
+    text-align: center;
+    bottom: 36%;
+    margin: 0 auto;
+    left: 0%;
+}
 body {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #FFF !important;
