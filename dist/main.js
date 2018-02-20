@@ -68,6 +68,13 @@ $(document).ready(function() {
                     $('.fixed.menu').transition('fade out');
                 }
             });
+        // Select all links with hashes
+        $('a').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
     });
 //            Navigation bar
     $('#sideBar').load('dist/temps/sideBar.html', function () {
@@ -279,5 +286,6 @@ $(document).ready(function() {
         });
         marker.setAnimation(google.maps.Animation.BOUNCE);
     });
-//            Main Carousel
+//    MAIN ANCHOR SNIPPET
+
 })
