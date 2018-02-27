@@ -89,7 +89,7 @@ $(document).ready(function() {
         // Google Maps
         $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE", function () {
             <!--Google's Map-->
-            var office = {lat: 26.40301, lng: 50.07632};
+            var Headoffice = {lat: 26.435532, lng: 50.128851};
             var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
             var icons = {
                 office: {
@@ -274,10 +274,10 @@ $(document).ready(function() {
                         ]
                     }
                 ],
-                center: office
+                center: Headoffice
             });
             var marker = new google.maps.Marker({
-                position: office,
+                position: Headoffice,
                 map: map,
                 icon: {
                     path: 'M15.938 32c0 0-9.938-14.062-9.938-20.062 0-11.813 9.938-11.938 9.938-11.938s10.062 0.125 10.062 11.875c0 6.187-10.062 20.125-10.062 20.125zM16 6c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z',
