@@ -1,11 +1,14 @@
 
-$.getScript("dist/parallax.min.js", function (){
+// Global Variable
+var host = window.location.protocol + "//" + window.location.host + "/app/";
+// alert (host);
+$.getScript( host + "dist/parallax.min.js", function (){
     // After load
 });
-$.getScript("dist/aos.js", function (){
+$.getScript(host + "dist/aos.js", function (){
     AOS.init();
 });
-$.getScript("dist/owl.carousel.js", function (){
+$.getScript(host + "dist/owl.carousel.js", function (){
     $('.main-carousel').owlCarousel({
         items:1,
         autoplay: true,
@@ -31,7 +34,7 @@ $.getScript("dist/owl.carousel.js", function (){
     $('.ui.accordion')
         .accordion()
 });
-$.getScript("dist/jquery.waypoints.js", function (){
+$.getScript(host + "dist/jquery.waypoints.js", function (){
     $('#counters').waypoint( function () {
         console.log('clicks')
 //            Removing TextHidden Class
@@ -58,7 +61,7 @@ $.getScript("dist/jquery.waypoints.js", function (){
 $(document).ready(function() {
 //          UI Initialize
 
-    $('#header').load('dist/temps/header.html', function () {
+    $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
         $('.masthead')
             .visibility({
@@ -69,7 +72,7 @@ $(document).ready(function() {
                 onBottomPassedReverse: function() {
                     $('.fixed.menu').transition('fade out');
                 }
-            });
+            });;
         // Select all links with hashes
         $('a').click(function(){
             $('html, body').animate({
@@ -79,13 +82,13 @@ $(document).ready(function() {
         });
     });
 //            Navigation bar
-    $('#sideBar').load('dist/temps/sideBar.html', function () {
+    $('#sideBar').load(host + 'dist/temps/sideBar.html', function () {
         // create sidebar and attach to menu open
         $('.ui.sidebar')
             .sidebar('attach events', '.toc.item')
     });
 //            Footer
-    $('#footer').load('dist/temps/footer.html', function () {
+    $('#footer').load(host + 'dist/temps/footer.html', function () {
         // Google Maps
         $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE", function () {
             <!--Google's Map-->

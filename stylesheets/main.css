@@ -16,7 +16,7 @@
 .bigHeading {
     color: #f5f5f5 !important;
     text-shadow: 0px 0px 16px #5a5a5a;
-    font-size: 8vw !important;
+    font-size: 5vw !important;
 }
 .bigSuperHeading {
     color: #FFF !important;
@@ -51,6 +51,9 @@ body.pushable {
 }
 .pusher {
     background-color: transparent !important;
+}
+#header {
+    z-index: 1000;
 }
 
 hr {
