@@ -16,7 +16,7 @@
 .bigHeading {
     color: #f5f5f5 !important;
     text-shadow: 0px 0px 16px #5a5a5a;
-    font-size: 5vw !important;
+    font-size: 6vw !important;
 }
 .bigSuperHeading {
     color: #FFF !important;
@@ -45,6 +45,8 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #FFF !important;
+    color: #000;
+    font-weight: 400 !important;
 }
 body.pushable {
     background-color: #FFF !important;
@@ -54,6 +56,10 @@ body.pushable {
 }
 #header {
     z-index: 1000;
+}
+
+p.justify {
+    text-align: justify;
 }
 
 hr {
@@ -97,21 +103,6 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     text-shadow: 0px 0px 16px #000;
-}
-.pointsImage {
-    background-image: url("../images/pointsBG.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-}
-.membersImage {
-    background-image: url("../images/membersBg.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-}
-.shippingImage {
-    background-image: url("../images/shippingBG.jpg");
-    background-attachment: fixed;
-    background-size: cover;
 }
 .text-center {
     text-align: center;

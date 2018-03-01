@@ -1,5 +1,6 @@
 
 // Global Variable
+var baseDomain = "https://git a";
 var host = window.location.protocol + "//" + window.location.host + "/app/";
 // alert (host);
 $.getScript( host + "dist/parallax.min.js", function (){
