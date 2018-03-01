@@ -1,7 +1,7 @@
 
 // Global Variable
 var baseDomain = "https://git a";
-var host = window.location.protocol + "//" + window.location.host + "/";
+var host = window.location.protocol + "//" + window.location.host + "/al-barrak-webapp/";
 // alert (host);
 $.getScript( host + "dist/parallax.min.js", function (){
     // After load
