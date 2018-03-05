@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f72392-7722-45c5-bc16-aeb2ca5d0202" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/shippingBG.jpg" afterPath="$PROJECT_DIR$/images/shippingBG.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.js" afterPath="$PROJECT_DIR$/dist/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/temps/header.html" afterPath="$PROJECT_DIR$/dist/temps/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/contactMail.php" afterPath="$PROJECT_DIR$/scripts/contactMail.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +20,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="0">
               <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="83" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -71,29 +68,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/main.js">
+      <file leaf-file-name="freight.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/freight.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="113" column="22" lean-forward="true" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+            <state relative-caret-position="-204">
+              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
-                <element signature="e#350#845#0" expanded="false" />
-                <element signature="e#949#1471#0" expanded="false" />
-                <element signature="e#3906#4039#0" expanded="false" />
-                <element signature="e#4130#11729#0" expanded="false" />
-                <element signature="e#4274#11721#0" expanded="false" />
-                <element signature="e#4725#11002#0" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dist/temps/header.html">
+      <file leaf-file-name="contactMail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/contactMail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="170">
+              <caret line="10" column="84" lean-forward="true" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+              <folding>
+                <marker date="1520251254698" expanded="true" signature="504:523" ph="..." />
+                <marker date="1520251254698" expanded="true" signature="569:586" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,7 +131,6 @@
         <option value="$PROJECT_DIR$/dist/owl.carousel.js" />
         <option value="$USER_HOME$/Desktop/drawing.svg" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/scripts/contactMail.php" />
         <option value="$PROJECT_DIR$/dist/temps/navBar.html" />
         <option value="$PROJECT_DIR$/dist/temps/sideBar.html" />
         <option value="$PROJECT_DIR$/airFreight.html" />
@@ -166,6 +161,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/dist/main.js" />
         <option value="$PROJECT_DIR$/dist/temps/header.html" />
+        <option value="$PROJECT_DIR$/scripts/contactMail.php" />
       </list>
     </option>
   </component>
@@ -219,18 +215,7 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="temps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="offices" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,12 +405,12 @@
       <workItem from="1519970736541" duration="6792000" />
       <workItem from="1520060258001" duration="866000" />
       <workItem from="1520065174364" duration="141000" />
-      <workItem from="1520248913080" duration="1040000" />
+      <workItem from="1520248913080" duration="4387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272004000" />
+    <option name="totallyTimeSpent" value="275351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -525,13 +510,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/mail.php" />
     <entry file="file://$PROJECT_DIR$/stylesheets/._pandoc-code-highlight.css" />
-    <entry file="file://$PROJECT_DIR$/scripts/contactMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/temps/sideBar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -659,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freight.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/offices/absaIraq.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -738,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="0">
           <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="83" />
           <folding>
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -772,6 +743,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/temps/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dist/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -798,11 +777,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/temps/header.html">
+    <entry file="file://$PROJECT_DIR$/freight.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="-204">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/contactMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="84" lean-forward="true" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+          <folding>
+            <marker date="1520251254698" expanded="true" signature="504:523" ph="..." />
+            <marker date="1520251254698" expanded="true" signature="569:586" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
