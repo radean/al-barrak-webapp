@@ -1,8 +1,9 @@
 
 // Global Variable
 var baseDomain = "https://git a";
-var host = window.location.protocol + "//" + window.location.host + "/al-barrak-webapp/";
+var host = window.location.protocol + "//" + window.location.host + "/2018/";
 // alert (host);
+
 $.getScript( host + "dist/parallax.min.js", function (){
     // After load
 });
@@ -56,14 +57,60 @@ $.getScript(host + "dist/jquery.waypoints.js", function (){
     }, {offset: '90%'});
 });
 
+// main header object
+var header = {};
+var setAttribute = function(attributes){
 
+};
+// Add and remove attributes
+header.AttributeManager = {
+    // adding a new attribute
+    addAttribute: function (id, url,size) {
+        var newAttribute = document.createElement("link");
+        newAttribute.setAttribute("rel", "icon");
+        newAttribute.setAttribute("type", "image/png");
+        newAttribute.setAttribute("href", url);
+        newAttribute.setAttribute("sizes", size);
+        document.getElementsByTagName("head")[0].appendChild(newAttribute);
+    }
+};
 
+// header.AttributeManager = function () {
+//     return{
+//         addAttribute: function (id, url,size) {
+//             var newAttribute = doc.createElement("link");
+//             setAttribute(newAttribute, {
+//                 rel : "icon" ,
+//                 type : "image/png",
+//                 href : url,
+//                 sizes: size
+//             })
+//         }
+//     }
+// }
+// Shorting long pairs
+// var doc = document;
+
+// var favicon = document.createElement('link');
+// favicon.rel = "icon";
+// favicon.type = "image/png";
+// favicon.href = "favicon-32x32.png";
+// favicon.sizes = "32x32";
+//
+// var favicon16 = new favicon();
+// favicon16.href = "favicon-16x16.png";
+// favicon16.size = "16x16";
+
+// <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+//     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 $(document).ready(function() {
 //          UI Initialize
 
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
+        // $('head').append(favicon);
+        // document.getElementsByTagName('head')[0].appendChild(favicon);
         $('.masthead')
             .visibility({
                 once: false,
@@ -73,7 +120,7 @@ $(document).ready(function() {
                 onBottomPassedReverse: function() {
                     $('.fixed.menu').transition('fade out');
                 }
-            });;
+            });
         // Select all links with hashes
         $('a').click(function(){
             $('html, body').animate({
