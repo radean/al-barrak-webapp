@@ -3,6 +3,11 @@
 var baseDomain = "https://git a";
 var host = window.location.protocol + "//" + window.location.host + "/2018/";
 // alert (host);
+$(window).on('load', function() { // makes sure the whole site is loaded
+    $('#status').fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(350).css({'overflow':'visible'});
+})
 
 $.getScript( host + "dist/parallax.min.js", function (){
     // After load
@@ -23,14 +28,29 @@ $.getScript(host + "dist/owl.carousel.js", function (){
     });
 //            Members Carousel
     $('.members-carousel').owlCarousel({
-        items:4,
-        autoplay: true,
-        center: false,
-        autoplayTimeout: 2500,
-        loop:true,
-        margin:40,
-        nav:false,
-        dots: false
+        responsive: {
+            0: {
+                items:2,
+                autoplay: true,
+                center: false,
+                autoplayTimeout: 2500,
+                loop:true,
+                margin:20,
+                nav:false,
+                dots: false
+            },
+            600:{
+                items:4,
+                autoplay: true,
+                center: false,
+                autoplayTimeout: 2500,
+                loop:true,
+                margin:40,
+                nav:false,
+                dots: false
+            }
+        },
+
 
     });
     $('.ui.accordion')

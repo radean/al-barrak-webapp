@@ -46,8 +46,54 @@ body {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #FFF !important;
     color: #000;
-    font-weight: 400 !important;
+    font-weight: 200 !important;
 }
+
+/* PRE LOADER*/
+body {
+    overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 1, 16, 0.96);
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+#preloader img{
+    text-align: center;
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    left: 52%;
+    top: 53%;
+    margin: -100px 0 0 -100px;
+
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../images/loop.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+/**/
 body.pushable {
     background-color: #FFF !important;
 }
@@ -59,6 +105,11 @@ body.pushable {
 }
 
 p.justify {
+    color: black;
+    font-weight: 200;
+    text-align: justify;
+}
+div.justify {
     text-align: justify;
 }
 
