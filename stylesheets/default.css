@@ -63,9 +63,15 @@ blockquote {
     content: "»"; }
 
 img {
-  width: 100%; }
+  width: 50%; }
   img.logo {
     width: 200px;
+    margin: 3rem 0 1rem; }
+  img.logoBig {
+    width: 80px;
+    margin: 3rem 0 1rem; }
+  img.logoSub {
+    width: 120px;
     margin: 3rem 0 1rem; }
 
 nav.ui.menu {

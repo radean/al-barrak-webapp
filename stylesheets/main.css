@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 /* Some mixins */
 /* Additional changes in Tags */
 .boldFont {
@@ -10,17 +14,122 @@
     font-weight: 100 !important;
 }
 .bigHeading {
-    color: #e6e6e6 !important;
+    color: #f5f5f5 !important;
+    text-shadow: 0px 0px 16px #5a5a5a;
+    font-size: 6vw !important;
+}
+.bigSuperHeading {
+    color: #FFF !important;
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
-    font-size: 100px !important;
+    font-size: 60px !important;
+}
+.bigSubHeading {
+    color: #d5d5d5 !important;
+    /*text-shadow: 4px 8px 16px #e1e1e1;*/
+    font-size: 40px !important;
+}
+.smallFont {
+    color: #000000 !important;
+    /*text-shadow: 4px 8px 16px #e1e1e1;*/
+    font-size: 10px !important;
+}
+.floated {
+    position: fixed;
+    color: white;
+    right: 0%;
+    text-align: center;
+    bottom: 36%;
+    margin: 0 auto;
+    left: 0%;
 }
 body {
     font-family: 'Montserrat', sans-serif !important;
+    background-color: #FFF !important;
+    color: #000;
+    font-weight: 200 !important;
 }
+
+/* PRE LOADER*/
+body {
+    overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 1, 16, 0.96);
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+#preloader img{
+    text-align: center;
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    left: 52%;
+    top: 53%;
+    margin: -100px 0 0 -100px;
+
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../images/loop.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+/**/
+body.pushable {
+    background-color: #FFF !important;
+}
+.pusher {
+    background-color: transparent !important;
+}
+#header {
+    z-index: 1000;
+}
+
+p.justify {
+    color: black;
+    font-weight: 200;
+    text-align: justify;
+}
+div.justify {
+    text-align: justify;
+}
+
 hr {
     height:1px;
     border: 1px dashed;
     content: 'div';
+}
+
+.ui.menu {
+    margin: 0rem !important;
+}
+.top-fixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.headerBlock {
+    min-height: 40px;
+    height: 80px;
 }
 
 .members-carousel img {
@@ -31,27 +140,39 @@ hr {
     display: none;
 }
 
+#counters {
+    text-shadow: 0px 0px 16px #000;
+}
 /*images Paralax*/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 .counterImage {
     background-image: url("../images/counterBg.jpg");
     background-attachment: fixed;
-    background-size: contain;
-}
-
-.membersImage {
-    background-image: url("../images/membersBg.jpg");
-    background-attachment: fixed;
     background-size: cover;
+    text-shadow: 0px 0px 16px #000;
 }
 .text-center {
     text-align: center;
 }
 /*Colours*/
 
+/*Plain blackish*/
+.plain-white {
+    color: #f5f5f5 !important;
+    background-color: #f5f5f5 !important;
+}
 /*Grey blackish*/
 .dark-grey {
     color: #EBEBEB !important;
     background-color: #2a2a2b !important;
+}
+/*White*/
+.white-text {
+    color: #EBEBEB !important;
 }
 /*Teal*/
 .dark-teal {
@@ -78,4 +199,91 @@ hr {
 /*FORMS*/
 .field textarea {
     max-height: 10em !important;
+}
+
+
+/*SEMANTIC UI*/
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    min-height: 600px;
+    padding: 1em 0em;
+}
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+    margin-top: 2em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+    padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
 }
