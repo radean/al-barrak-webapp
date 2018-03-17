@@ -26,7 +26,7 @@
 .bigSubHeading {
     color: #d5d5d5 !important;
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
-    font-size: 40px !important;
+    font-size: 34px !important;
 }
 .smallFont {
     color: #000000 !important;
@@ -104,6 +104,13 @@ body.pushable {
     z-index: 1000;
 }
 
+span.date {
+    font-weight: 200 !important;
+    color: #000;
+}
+
+
+
 p.justify {
     color: black;
     font-weight: 200;
@@ -136,6 +143,11 @@ hr {
     border: 1px solid #000;
     margin: 20px;
 }
+.marquee-carousel img {
+    border: 0px solid #000;
+    margin: 0px;
+    width: 50% !important;
+}
 .textHidden {
     display: none;
 }
@@ -145,7 +157,7 @@ hr {
 }
 /*images Paralax*/
 .parallax-window {
-    min-height: 400px;
+    min-height: 200px;
     background: transparent;
 }
 
@@ -285,5 +297,16 @@ hr {
     .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
+    }
+}
+
+/*------------------------------*/
+/*------------------------------*/
+/*MEDIA QUERIES*/
+/*------------------------------*/
+/*------------------------------*/
+@media only screen and (max-width: 767px) {
+    .ui.table:not(.unstackable) thead {
+        display: none;
     }
 }

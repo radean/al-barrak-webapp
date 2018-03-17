@@ -24,9 +24,8 @@ $.getScript(host + "dist/owl.carousel.js", function (){
         margin:0,
         nav:false,
         dots: false
-
     });
-//            Members Carousel
+//  Members Carousel
     $('.members-carousel').owlCarousel({
         responsive: {
             0: {
@@ -50,9 +49,33 @@ $.getScript(host + "dist/owl.carousel.js", function (){
                 dots: false
             }
         },
-
-
     });
+//  Marquee Carousel
+    $('.marquee-carousel').owlCarousel({
+        responsive: {
+            0: {
+                items:2,
+                autoplay: true,
+                center: false,
+                autoplayTimeout: 2500,
+                loop:true,
+                margin:20,
+                nav:false,
+                dots: false
+            },
+            600:{
+                items:4,
+                autoplay: true,
+                center: false,
+                autoplayTimeout: 2500,
+                loop:true,
+                margin:40,
+                nav:false,
+                dots: false
+            }
+        },
+    });
+//  MFL Marquee Carousel
     $('.ui.accordion')
         .accordion()
 });
@@ -66,7 +89,7 @@ $.getScript(host + "dist/jquery.waypoints.js", function (){
             $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
             }, {
-                duration: 5000,
+                duration: 6000,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(Math.ceil(now));
@@ -110,19 +133,6 @@ header.AttributeManager = {
 // }
 // Shorting long pairs
 // var doc = document;
-
-// var favicon = document.createElement('link');
-// favicon.rel = "icon";
-// favicon.type = "image/png";
-// favicon.href = "favicon-32x32.png";
-// favicon.sizes = "32x32";
-//
-// var favicon16 = new favicon();
-// favicon16.href = "favicon-16x16.png";
-// favicon16.size = "16x16";
-
-// <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-//     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 $(document).ready(function() {
 //          UI Initialize
