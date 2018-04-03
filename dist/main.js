@@ -1,7 +1,17 @@
+// Switches
+var isOnline = false
+// =================
 
 // Global Variable
-var baseDomain = "https://git a";
-var host = window.location.protocol + "//" + window.location.host + "/2018/";
+var baseDomain = "/app/";
+var serverDomain = "/2018/"
+var selectedServer = '';
+if (isOnline) {
+    selectedServer = serverDomain
+}else{
+    selectedServer = baseDomain
+}
+var host = window.location.protocol + "//" + window.location.host + SelectedServer;
 // alert (host);
 $(window).on('load', function() { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
