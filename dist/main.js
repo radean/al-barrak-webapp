@@ -11,7 +11,7 @@ if (isOnline) {
 }else{
     selectedServer = baseDomain
 }
-var host = window.location.protocol + "//" + window.location.host + SelectedServer;
+var host = window.location.protocol + "//" + window.location.host + selectedServer;
 // alert (host);
 $(window).on('load', function() { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
