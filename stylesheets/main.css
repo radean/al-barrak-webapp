@@ -33,6 +33,16 @@
     /*text-shadow: 4px 8px 16px #e1e1e1;*/
     font-size: 10px !important;
 }
+.gradientColor {
+    color: #0052EE;
+    text-shadow: none;
+    background: -webkit-linear-gradient(#0079ff, #0067eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nonMargin h4 {
+    margin:0;
+}
 .floated {
     position: fixed;
     color: white;
