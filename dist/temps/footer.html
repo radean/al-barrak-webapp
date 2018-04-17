@@ -123,23 +123,29 @@
             <div class="row">
                 <div class="ui container">
                     <h3>Let's Talk to us</h3>
-                    <form class="ui form" method="post" action="scripts\contactMail.php">
+                    <form class="ui form" name="contactForm" method="post" action="scripts\contactMail.php" onsubmit="return validateForm()">
                         <div class="field">
                             <input type="text" name="name" placeholder="Full Name*">
                         </div>
+                        <div id="emailFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
                         <div class="field">
-                            <input type="text" name="email" placeholder="Email*">
+                            <input type="text" name="email" placeholder="Email*" value="">
                         </div>
+                        <div id="contactFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
                         <div class="field">
-                            <input type="number" name="contact" placeholder="Contact">
+                            <input type="tel" name="contact" placeholder="Contact" value="">
                         </div>
+                        <div id="countryFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
                         <div class="field">
-                            <select class="ui dropdown" name="country">
+                            <select class="ui dropdown" name="country" >
+                                <option value="">Country</option>
                                 <option value="0">KSA</option>
                                 <option value="1">UAE</option>
                                 <option value="2">Canada</option>
                                 <option value="3">India</option>
                                 <option value="4">Iraq</option>
+                                <option value="5">Singapore</option>
+                                <option value="6">Japan</option>
                             </select>
                         </div>
                         <div class="field">

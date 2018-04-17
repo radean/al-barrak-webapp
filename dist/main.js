@@ -1,5 +1,5 @@
 // Switches
-var isOnline = false
+var isOnline = false;
 // =================
 
 // Global Variable
@@ -18,6 +18,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(350).css({'overflow':'visible'});
 })
+
 
 $.getScript( host + "dist/parallax.min.js", function (){
     // After load
@@ -154,17 +155,17 @@ $(document).ready(function() {
         $('.masthead')
             .visibility({
                 once: false,
-                onBottomPassed: function() {
+                onBottomPassed: function () {
                     $('.fixed.menu').transition('fade in');
                 },
-                onBottomPassedReverse: function() {
+                onBottomPassedReverse: function () {
                     $('.fixed.menu').transition('fade out');
                 }
             });
         // Select all links with hashes
-        $('a').click(function(){
+        $('a').click(function () {
             $('html, body').animate({
-                scrollTop: $( $(this).attr('href') ).offset().top
+                scrollTop: $($(this).attr('href')).offset().top
             }, 500);
             return false;
         });
@@ -180,15 +181,31 @@ $(document).ready(function() {
         // Google Maps
         $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE", function () {
             <!--Google's Map-->
-            var Headoffice = {lat: 26.435532, lng: 50.128851};
+            var locations = [
+                ['Headoffice', 26.432926, 50.124462],
+                ['canada', 43.661502, -79.598483],
+                ['singapore', 1.276032, 103.846189],
+                ['india', 19.074973, 73.021136],
+                ['dubai', 25.116253, 55.390241],
+                ['iraq', 30.563378, 47.729758],
+            ];
+            // var Headoffice = {lat: 26.432926, lng: 50.124462};
+            // var canada = {lat: 43.661502, lng: -79.598483};
+            // var singapore = {lat: 1.276032, lng: 103.846189};
+            // var india = {lat: 19.074973, lng: 73.021136};
+            // var dubai = {lat: 25.116253, lng: 55.390241};
+            // var iraq = {lat: 30.563378, lng: 47.729758};
+
             var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
             var icons = {
                 office: {
                     icon: iconBase + 'map-icon-map-pin.png'
                 }
             };
+
             var map = new google.maps.Map(document.getElementById('locationMap'), {
-                zoom: 11,
+                zoom: 1,
+                center: new google.maps.LatLng(26.432926, 67.729758),
                 styles: [
                     {
                         "featureType": "water",
@@ -365,23 +382,38 @@ $(document).ready(function() {
                         ]
                     }
                 ],
-                center: Headoffice
             });
-            var marker = new google.maps.Marker({
-                position: Headoffice,
-                map: map,
-                icon: {
-                    path: 'M15.938 32c0 0-9.938-14.062-9.938-20.062 0-11.813 9.938-11.938 9.938-11.938s10.062 0.125 10.062 11.875c0 6.187-10.062 20.125-10.062 20.125zM16 6c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z',
-                    fillColor: 'teal',
-                    fillOpacity: 1,
-                    strokeColor: 'teal',
-                    strokeWeight: 0
-                },
-                title: 'Our Office',
-            });
-            marker.setAnimation(google.maps.Animation.BOUNCE);
+
+            // var marker = new google.maps.Marker({
+            //     position: Headoffice,
+            //     map: map,
+            //     icon: {
+            //         path: 'M15.938 32c0 0-9.938-14.062-9.938-20.062 0-11.813 9.938-11.938 9.938-11.938s10.062 0.125 10.062 11.875c0 6.187-10.062 20.125-10.062 20.125zM16 6c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z',
+            //         fillColor: 'teal',
+            //         fillOpacity: 1,
+            //         strokeColor: 'teal',
+            //         strokeWeight: 0
+            //     },
+            //     title: 'Our Office',
+            // });
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    icon: {
+                        path: 'M15.938 32c0 0-9.938-14.062-9.938-20.062 0-11.813 9.938-11.938 9.938-11.938s10.062 0.125 10.062 11.875c0 6.187-10.062 20.125-10.062 20.125zM16 6c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4z',
+                        fillColor: 'teal',
+                        fillOpacity: 1,
+                        strokeColor: 'teal',
+                        strokeWeight: 0
+                    },
+                });
+            }
+            ;
+            // marker.setAnimation(google.maps.Animation.BOUNCE);
         });
-    });
 //    MAIN ANCHOR SNIPPET
 
-})
+    });
+});

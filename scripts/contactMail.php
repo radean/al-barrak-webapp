@@ -5,6 +5,8 @@ $emailUae = "g.canute@absaco.com";
 $emailCanada = "nick@absaco.com";
 $emailIndia = "stella@absaco.com";
 $emailIraq = "doc.iq@absaco.com";
+$emailSingapore = "allabsa.dmm@absaco.com";
+$emailJapan = "Ihara@absaco.com";
 
 $country = $_POST['country'];
 
@@ -25,6 +27,12 @@ switch ($country){
         break;
     case 4:
         $emailMain = $emailIraq;
+        break;
+    case 5:
+        $emailMain = $emailSingapore;
+        break;
+    case 6:
+        $emailMain = $emailJapan;
         break;
 }
 

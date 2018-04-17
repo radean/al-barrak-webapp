@@ -16,7 +16,7 @@
 .bigHeading {
     color: #f5f5f5 !important;
     text-shadow: 0px 0px 16px #5a5a5a;
-    font-size: 6vw !important;
+    font-size: 4.4vw !important;
 }
 .bigSuperHeading {
     color: #FFF !important;
@@ -119,7 +119,10 @@ span.date {
     color: #000;
 }
 
-
+.rightFloated{
+    position: absolute;
+    right: 0px;
+}
 
 p.justify {
     color: black;
