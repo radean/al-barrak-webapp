@@ -5,7 +5,7 @@ $emailUae = "g.canute@absaco.com";
 $emailCanada = "nick@absaco.com";
 $emailIndia = "stella@absaco.com";
 $emailIraq = "doc.iq@absaco.com";
-$emailSingapore = "allabsa.dmm@absaco.com";
+$emailSingapore = "nathan@absaco.com";
 $emailJapan = "Ihara@absaco.com";
 
 $country = $_POST['country'];
