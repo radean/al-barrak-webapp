@@ -1,10 +1,10 @@
 // Switches
-var isOnline = false;
+var isOnline = true;
 // =================
 
 // Global Variable
 var baseDomain = "/app/";
-var serverDomain = "/2018/"
+var serverDomain = "";
 var selectedServer = '';
 if (isOnline) {
     selectedServer = serverDomain
