@@ -4,7 +4,7 @@ var isOnline = true;
 
 // Global Variable
 var baseDomain = "/app/";
-var serverDomain = "";
+var serverDomain = "/";
 var selectedServer = '';
 if (isOnline) {
     selectedServer = serverDomain

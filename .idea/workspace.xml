@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f72392-7722-45c5-bc16-aeb2ca5d0202" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/broadcast/canada.jpg" afterPath="$PROJECT_DIR$/images/broadcast/canada.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/broadcast/india.jpg" afterPath="$PROJECT_DIR$/images/broadcast/india.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/broadcast/singapore.jpg" afterPath="$PROJECT_DIR$/images/broadcast/singapore.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/broadcast/trucks.jpg" afterPath="$PROJECT_DIR$/images/broadcast/trucks.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/broadcast/uae.jpg" afterPath="$PROJECT_DIR$/images/broadcast/uae.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/services/transportation.jpg" afterPath="$PROJECT_DIR$/images/services/transportation.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/travelBG.jpg" afterPath="$PROJECT_DIR$/images/travelBG.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.js" afterPath="$PROJECT_DIR$/dist/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/temps/footer.html" afterPath="$PROJECT_DIR$/dist/temps/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/temps/header.html" afterPath="$PROJECT_DIR$/dist/temps/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freight.html" afterPath="$PROJECT_DIR$/freight.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/offices/absaIraq.html" afterPath="$PROJECT_DIR$/offices/absaIraq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/offices/absaOthers.html" afterPath="$PROJECT_DIR$/offices/absaOthers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trading.html" afterPath="$PROJECT_DIR$/trading.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,42 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/temps/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#8;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#8;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#8;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#div#0;n#div#8;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#9;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="471">
+              <caret line="247" column="39" lean-forward="true" selection-start-line="247" selection-start-column="39" selection-end-line="247" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trading.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trading.html">
+      <file leaf-file-name="absaIraq.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/offices/absaIraq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            <state relative-caret-position="170">
+              <caret line="64" column="89" lean-forward="true" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -99,6 +70,9 @@
       <find>datatable</find>
       <find>terminal</find>
       <find>paral</find>
+      <find>/2018</find>
+      <find>host</find>
+      <find>2018</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;hr&gt;</replace>
@@ -107,6 +81,9 @@
       <replace>+</replace>
       <replace>trading</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\AlBarrak\app</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,7 +109,6 @@
         <option value="$PROJECT_DIR$/offices/absaUae.html" />
         <option value="$PROJECT_DIR$/offices/absaIndia.html" />
         <option value="$PROJECT_DIR$/scripts/contactMail.php" />
-        <option value="$PROJECT_DIR$/dist/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/shipping.html" />
         <option value="$PROJECT_DIR$/warehouse.html" />
@@ -141,14 +117,15 @@
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/terminal.html" />
         <option value="$PROJECT_DIR$/logistics.html" />
-        <option value="$PROJECT_DIR$/dist/temps/footer.html" />
         <option value="$PROJECT_DIR$/airFreight.html" />
         <option value="$PROJECT_DIR$/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/offices/absaIraq.html" />
-        <option value="$PROJECT_DIR$/dist/temps/header.html" />
         <option value="$PROJECT_DIR$/freight.html" />
         <option value="$PROJECT_DIR$/offices/absaOthers.html" />
         <option value="$PROJECT_DIR$/trading.html" />
+        <option value="$PROJECT_DIR$/dist/main.js" />
+        <option value="$PROJECT_DIR$/dist/temps/header.html" />
+        <option value="$PROJECT_DIR$/dist/temps/footer.html" />
+        <option value="$PROJECT_DIR$/offices/absaIraq.html" />
       </list>
     </option>
   </component>
@@ -215,6 +192,11 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="offices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -262,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.trading.html">
+  <component name="RunManager" selected="JavaScript Debug.absaIraq.html">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -345,9 +327,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.trading.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.absaIndia.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.absaIraq.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.absaIraq.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.trading.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.absaIndia.html" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.absaSingapore.html" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.freight.html" />
       </list>
@@ -450,12 +432,12 @@
       <workItem from="1526465012852" duration="6679000" />
       <workItem from="1526541319700" duration="486000" />
       <workItem from="1526542419415" duration="305000" />
-      <workItem from="1526553828417" duration="1266000" />
+      <workItem from="1526553828417" duration="2945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435867000" />
+    <option name="totallyTimeSpent" value="437546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -471,6 +453,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -482,7 +465,6 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -719,20 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/temps/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offices/absaIraq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -750,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/temps/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="220" column="60" lean-forward="true" selection-start-line="220" selection-start-column="60" selection-end-line="220" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/contactMail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -766,14 +726,6 @@
             <marker date="1526285493958" expanded="true" signature="1237:1256" ph="..." />
             <marker date="1526285493958" expanded="true" signature="1302:1319" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="72" lean-forward="true" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,13 +745,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="87" lean-forward="true" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#373#646#0" expanded="false" />
+            <element signature="e#705#726#0" expanded="false" />
+            <element signature="e#774#793#0" expanded="false" />
+            <element signature="e#850#2394#0" expanded="false" />
+            <element signature="e#1106#1682#0" expanded="false" />
+            <element signature="e#1745#2321#0" expanded="false" />
+            <element signature="e#2455#3041#0" expanded="false" />
+            <element signature="e#3123#3127#0" expanded="false" />
+            <element signature="e#3184#3606#0" expanded="false" />
+            <element signature="e#3609#3651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="161" column="53" lean-forward="false" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
+        <state relative-caret-position="-357">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -822,10 +800,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trading.html">
+    <entry file="file://$PROJECT_DIR$/dist/temps/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        <state relative-caret-position="-430">
+          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#1;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#a#2;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/temps/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="247" column="39" lean-forward="true" selection-start-line="247" selection-start-column="39" selection-end-line="247" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offices/absaIraq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="64" column="89" lean-forward="true" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
           <folding />
         </state>
       </provider>
