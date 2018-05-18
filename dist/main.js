@@ -17,6 +17,8 @@ $(window).on('load', function() { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(350).css({'overflow':'visible'});
+    $('.ui.dropdown')
+        .dropdown();
 })
 
 
@@ -151,6 +153,8 @@ $(document).ready(function() {
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
         // $('head').append(favicon);
+        $('.ui.dropdown')
+            .dropdown();
         // document.getElementsByTagName('head')[0].appendChild(favicon);
         $('.masthead')
             .visibility({

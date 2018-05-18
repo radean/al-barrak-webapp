@@ -1,6 +1,6 @@
 <?php
 //Email processor
-$emailKsa = "allabsa.dmm@absaco.com";
+$emailKsa = "absadammam@gmail.com";
 $emailUae = "g.canute@absaco.com";
 $emailCanada = "nick@absaco.com";
 $emailIndia = "stella@absaco.com";
@@ -10,7 +10,7 @@ $emailJapan = "Ihara@absaco.com";
 
 $country = $_POST['country'];
 
-$emailMain = "allabsa.dmm@absaco.com";
+$emailMain = "absadammam@gmail.com";
 
 switch ($country){
     case 0:
@@ -41,7 +41,7 @@ $to = $emailMain;
 $subject = "ABSA Enquiry";
 $headers = "From: " . strip_tags($_POST['email']) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
-$headers .= "CC: allabsa.dmm@absaco.com\r\n";
+$headers .= "CC: absadammam@gmail.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $message = '<html><body>';
@@ -54,8 +54,9 @@ $message .= "<tr><td><strong>Contact:</strong> </td><td>" . strip_tags($_POST['c
 $message .= "<tr><td><strong>Message:</strong> </td><td>" . strip_tags($_POST['message']) . "</td></tr>";
 $message .= "</table>";
 $message .= "</body></html>";
+mail($to, $subject, $message, $headers);
 if(mail($to, $subject, $message, $headers)) {
-    echo $country;
+    echo "Email Sent";
 //    header( 'Location: http://absaco.com' ) ;
 } else {
     echo "Server Error RedCheck";
