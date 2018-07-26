@@ -44,7 +44,7 @@
     margin:0;
 }
 .floated {
-    position: fixed;
+    position: absolute;
     color: white;
     right: 0%;
     text-align: center;
