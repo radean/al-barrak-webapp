@@ -1,5 +1,5 @@
 // Switches
-var isOnline = true;
+var isOnline = false;
 // =================
 
 // Global Variable
@@ -12,6 +12,7 @@ if (isOnline) {
     selectedServer = baseDomain
 }
 var host = window.location.protocol + "//" + window.location.host + selectedServer;
+
 console.log(host);
 // alert (host);
 $(window).on('load', function() { // makes sure the whole site is loaded
@@ -181,6 +182,7 @@ $(document).ready(function() {
         $('.ui.sidebar')
             .sidebar('attach events', '.toc.item')
     });
+
 //            Footer
     $('#footer').load(host + 'dist/temps/footer.html', function () {
         // Google Maps

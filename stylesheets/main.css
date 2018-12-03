@@ -64,6 +64,12 @@ body {
     overflow: hidden;
 }
 
+.floatingButtons {
+    position: fixed !important;
+    top: 90% !important;
+    right: 2% !important;
+    z-index: 999 !important;
+}
 
 /* Preloader */
 

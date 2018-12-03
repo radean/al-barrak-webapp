@@ -9,6 +9,19 @@
                 <div class="ui centered text-center">
                     <p>Please complete the form below and we will respond to your inquiry to the earliest possible.</p>
                 </div>
+                <button class="ui orange button labeled icon floatingButtons" id="nycDialogBT"> <i class="right certificate icon"></i> Certificate </button>
+                <div class="ui modal small">
+                    <i class="close icon"></i>
+                    <div class="header">
+                        SAFE CARGO WORK PROMOTION -ZERO DAMAGES
+                    </div>
+                    <div class="scrolling content fluid">
+                        <img class="ui centered image" src="http://absaco.com/download/certificateNYK.JPG" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="actions">
+                        <div class="ui button ok">OK</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -119,6 +132,7 @@
                 <!--</div>-->
             <!--</div>-->
         </div>
+        <!--Modal here-->
         <!--Contact Form-->
         <div class="five wide column" style="padding: 2em">
             <div class="row">
@@ -261,7 +275,7 @@
         <div class="sixteen wide column text-center bordered">
             <div class="ui segment dark-teal text-center">
                 <h5>
-                    Copyright © 2018 ABSA Group. all rights reserved. -: ver.0.5 beta :-
+                    Copyright © 2018 ABSA Group. all rights reserved. -: ver.0.6 beta :-
                 </h5>
             </div>
         </div>
@@ -279,6 +293,16 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
     })();
+    // Modal
+    $( "#nycDialogBT" ).click(function() {
+
+        $('.ui.modal')
+            .modal({
+                onApprove : function() {
+                }
+            })
+            .modal('show');
+    });
 </script>
 <!--End of Tawk.to Script-->
 
