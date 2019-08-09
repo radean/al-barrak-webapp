@@ -3,7 +3,7 @@ var isOnline = false;
 // =================
 
 // Global Variable
-var baseDomain = "/app/";
+var baseDomain = "/absaco/";
 var serverDomain = "/";
 var selectedServer = '';
 if (isOnline) {
@@ -12,16 +12,175 @@ if (isOnline) {
     selectedServer = baseDomain
 }
 var host = window.location.protocol + "//" + window.location.host + selectedServer;
-
-console.log(host);
 // alert (host);
 $(window).on('load', function() { // makes sure the whole site is loaded
     $('#status').fadeOut(); // will first fade out the loading animation
+    //Adding Calendars
+    // $('#customerShipmentReadyDateCalendar')
+    //     .calendar({
+    //         type: 'date'
+    //     });
+    // $('#customerShipmentDeliveryDateCalendar')
+    //     .calendar({
+    //         type: 'date'
+    //     });
+    $(function(){
+        $('.submit').on('submit', function(event){
+            event.preventDefault();
+            // alert("Form Submission stopped.");
+        });
+    });
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     $('body').delay(350).css({'overflow':'visible'});
-    $('.ui.dropdown')
-        .dropdown();
+    // $('.ui.dropdown')
+    //     .dropdown();
+    // Form Validation Queries
+    $('.ui.form')
+        .form({
+            fields: {
+                name: {
+                    identifier: 'fullName',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your Full name'
+                        }
+                    ]
+                },
+                email: {
+                    identifier: 'email',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your email'
+                        }
+                    ]
+                },
+                phoneNumber: {
+                    identifier: 'phoneNumber',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your Phone Number'
+                        }
+                    ]
+                },
+                company: {
+                    identifier: 'company',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your company name'
+                        }
+                    ]
+                },
+                originZipCode: {
+                    identifier: 'originZipCode',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your Origin Zip Code'
+                        }
+                    ]
+                },
+                shipmentReadyDate: {
+                    identifier: 'shipmentReadyDate',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter your Shipment Ready Date'
+                        }
+                    ]
+                },
+                originAppointment: {
+                    identifier: 'originAppointment',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please Select an "Yes" if you require Origin Appointment'
+                        }
+                    ]
+                },
+                destinationZipCode: {
+                    identifier: 'destinationZipCode',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter destination zip code'
+                        }
+                    ]
+                },
+                requiredDeliveryDate: {
+                    identifier: 'empty',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter the Delivery Date'
+                        }
+                    ]
+                },
+                destinationAppointment: {
+                    identifier: 'destinationAppointment',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please Select an "Yes" if you require Destination Appointment'
+                        }
+                    ]
+                },
+                totalWeight: {
+                    identifier: 'totalWeight',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter the total weight of your Shipment'
+                        }
+                    ]
+                },
+                freightClass: {
+                    identifier: 'freightClass',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter the freight class'
+                        }
+                    ]
+                },
+                packageType: {
+                    identifier: 'packageType',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : 'Please enter the package type'
+                        }
+                    ]
+                },
+                skills: {
+                    identifier: 'skills',
+                    rules: [
+                        {
+                            type   : 'minCount[2]',
+                            prompt : 'Please select at least two skills'
+                        }
+                    ]
+                },
+                // palletLenght: 'empty',
+                // palletWidth: 'empty',
+                // palletHeight: 'empty',
+                // palletQuantity : 'empty',
+                // description: 'empty',
+            },
+            onSuccess: function(event, fields) {
+                mainApp.Create();
+                console.log("Success Event Triggered");
+                setTimeout(function(){
+                    window.location.replace('https://absaco.com/thankyou.html');
+                }, 5000);
+                event.preventDefault();
+            }
+        });
 })
+
 
 
 $.getScript( host + "dist/parallax.min.js", function (){
@@ -133,30 +292,14 @@ header.AttributeManager = {
     }
 };
 
-// header.AttributeManager = function () {
-//     return{
-//         addAttribute: function (id, url,size) {
-//             var newAttribute = doc.createElement("link");
-//             setAttribute(newAttribute, {
-//                 rel : "icon" ,
-//                 type : "image/png",
-//                 href : url,
-//                 sizes: size
-//             })
-//         }
-//     }
-// }
-// Shorting long pairs
-// var doc = document;
-
 $(document).ready(function() {
 //          UI Initialize
 
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
         // $('head').append(favicon);
-        $('.ui.dropdown')
-            .dropdown();
+        // $('.ui.dropdown')
+        //     .dropdown();
         // document.getElementsByTagName('head')[0].appendChild(favicon);
         $('.masthead')
             .visibility({
@@ -424,3 +567,5 @@ $(document).ready(function() {
 
     });
 });
+
+

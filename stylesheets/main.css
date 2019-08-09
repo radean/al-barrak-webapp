@@ -231,6 +231,9 @@ hr {
 .field textarea {
     max-height: 10em !important;
 }
+.field {
+    margin: 10px;
+}
 
 
 /*SEMANTIC UI*/
