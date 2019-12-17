@@ -1,9 +1,9 @@
 // Switches
-var isOnline = false;
+var isOnline = true;
 // =================
 
 // Global Variable
-var baseDomain = "/absaco/";
+var baseDomain = "/app/";
 var serverDomain = "/";
 var selectedServer = '';
 if (isOnline) {
@@ -34,8 +34,8 @@ $(window).on('load', function() { // makes sure the whole site is loaded
     $('body').delay(350).css({'overflow':'visible'});
     // $('.ui.dropdown')
     //     .dropdown();
-    // Form Validation Queries
-    $('.ui.form')
+        // Form Validation Queries
+        $('.ui.form')
         .form({
             fields: {
                 name: {
@@ -172,7 +172,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
             },
             onSuccess: function(event, fields) {
                 mainApp.Create();
-                console.log("Success Event Triggered");
+                // console.log("Success Event Triggered")
                 setTimeout(function(){
                     window.location.replace('https://absaco.com/thankyou.html');
                 }, 5000);
@@ -180,7 +180,6 @@ $(window).on('load', function() { // makes sure the whole site is loaded
             }
         });
 })
-
 
 
 $.getScript( host + "dist/parallax.min.js", function (){
@@ -298,8 +297,8 @@ $(document).ready(function() {
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
         // $('head').append(favicon);
-        // $('.ui.dropdown')
-        //     .dropdown();
+        $('.ui.dropdown')
+            .dropdown();
         // document.getElementsByTagName('head')[0].appendChild(favicon);
         $('.masthead')
             .visibility({
@@ -325,7 +324,6 @@ $(document).ready(function() {
         $('.ui.sidebar')
             .sidebar('attach events', '.toc.item')
     });
-
 //            Footer
     $('#footer').load(host + 'dist/temps/footer.html', function () {
         // Google Maps
@@ -567,5 +565,3 @@ $(document).ready(function() {
 
     });
 });
-
-
