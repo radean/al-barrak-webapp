@@ -1,0 +1,312 @@
+<!--Contact us-->
+<div class="ui vertical stripe " >
+    <div class="ui middle aligned container">
+        <div class="row">
+            <div class="sixteen wide column">
+                <h1 class="ui centered header boldFont bigHeading">
+                    CONTACT US
+                </h1>
+                <div class="ui centered text-center">
+                    <p>Please complete the form below and we will respond to your inquiry to the earliest possible.</p>
+                </div>
+                <button class="ui orange button labeled icon floatingButtons" id="nycDialogBT"> <i class="right certificate icon"></i> Certificate </button>
+                <div class="ui modal small">
+                    <i class="close icon"></i>
+                    <div class="header">
+                        SAFE CARGO WORK PROMOTION -ZERO DAMAGES
+                    </div>
+                    <div class="scrolling content fluid">
+                        <img class="ui centered image" src="https://absaco.com/download/certificateNYK.JPG" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="actions">
+                        <div class="ui button ok">OK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer Main-->
+<div class="ui inverted divided equal height stackable grid">
+    <!--Bottom-->
+    <div class="row">
+        <!--Space-->
+        <!--<div class="one wide column black">-->
+        <!--</div>-->
+        <!-- Information -->
+        <div class="three wide column dark-grey " style="padding: 2em">
+            <div class="row">
+                <div class="ui grid">
+                    <div class="sixteen wide column text-center">
+                        <div class="item">
+                            <div class="ui image">
+                                <i class="marker big icon"></i>
+                            </div>
+                            <div class="middle aligned content">
+                                <h4 class="white">Head Office</h4>
+                                <p class="discription">
+                                    Al-Barrak Tower
+                                    P.O. Box 3682
+                                    Dammam - Saudi Arabia
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide mobile eight wide tablet column text-center">
+                        <div class="item">
+                            <div class="ui image">
+                                <i class="phone big icon"></i>
+                            </div>
+                            <div class="middle aligned content">
+                                <h4 class="white">Phone</h4>
+                                <p class="discription">
+                                    +966-13-813-8500 <br>
+                                    <!-- Ext. 49 / 3180 -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide mobile eight wide tablet column text-center">
+                        <div class="item">
+                            <div class="ui image">
+                                <i class="fax big icon"></i>
+                            </div>
+                            <div class="middle aligned content">
+                                <h4 class="white">Fax</h4>
+                                <p class="discription">
+                                    +966-13-834-1182
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sixteen wide mobile sixteen wide tablet column text-center">
+                        <div class="item">
+                            <div class="ui image">
+                                <i class="wait big icon"></i>
+                            </div>
+                            <div class="middle aligned content">
+                                <h4 class="white">E-Mail</h4>
+                                <p class="discription">
+                                    allabsa.dmm@absaco.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="ui stackable items">-->
+                <!--<div class="item">-->
+                    <!--<div class="ui image">-->
+                        <!--<i class="marker big icon"></i>-->
+                    <!--</div>-->
+                    <!--<div class="middle aligned content">-->
+                        <!--<h4 class="white">Location</h4>-->
+                        <!--<p class="discription">-->
+                            <!--Post Box 3682, Al-Barrak Buliding,-->
+                            <!--Dammam 31481, Saudi Arabia-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<div class="ui image">-->
+                        <!--<i class="phone big icon"></i>-->
+                    <!--</div>-->
+                    <!--<div class="middle aligned content">-->
+                        <!--<h4 class="white">Phone</h4>-->
+                        <!--<p class="discription">-->
+                            <!--00966-13-8333566-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<div class="ui image">-->
+                        <!--<i class="wait big icon"></i>-->
+                    <!--</div>-->
+                    <!--<div class="middle aligned content">-->
+                        <!--<h4 class="white">E-Mail</h4>-->
+                        <!--<p class="discription">-->
+                            <!--absa@absaco.com-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <!--Modal here-->
+        <!--Contact Form-->
+        <div class="five wide column" style="padding: 2em">
+            <div class="row">
+                <div class="ui container">
+                    <h3>GET IN TOUCH</h3>
+                    <!--onsubmit="return validateForm()"-->
+                    <form class="ui form" name="contactForm" method="post" action="https://absaco.com/scripts/contactMail.php" enctype="multipart/form-data" >
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Full Name*">
+                        </div>
+                        <div id="emailFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email*" value="">
+                        </div>
+                        <div id="contactFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
+                        <div class="field">
+                            <input type="tel" name="contact" placeholder="Contact" value="">
+                        </div>
+                        <div id="countryFillError" style="display: none; color: #FF6D75;">Country must be selected before submit</div>
+                        <div class="field">
+                            <select class="ui dropdown" name="country" >
+                                <option value="">Country</option>
+                                <option value="0">KSA</option>
+                                <option value="1">UAE</option>
+                                <option value="2">Canada</option>
+                                <option value="3">India</option>
+                                <option value="4">Iraq</option>
+                                <option value="5">Singapore</option>
+                                <option value="6">Japan</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <textarea name="message" placeholder="Your Message*"></textarea>
+                        </div>
+                        <button class="ui button centered" type="submit">Submit</button>
+                    </form>
+                    <!--<h3>Office Locations</h3>-->
+                    <!--<h4>Al Barrak  Travel & Tourism – KSA</h4>-->
+                    <!--<p class="smallFont">-->
+                        <!--Captain Barrak Commercial Tower<br>-->
+                        <!--Jeddah 21484,<br>-->
+                        <!--Box 17111 Saudi Arabia.-->
+                        <!--Tel : 00966-12-6038000  Ext. 2173 / 2174-->
+                        <!--Fax : 00966-12-6038021<br>-->
+                        <!--E-Mail : travel.booking@jed.albarrak.com-->
+                    <!--</p>-->
+                    <!--<h4>ABSA Canada Travel Agency Co. Ltd.,</h4>-->
+                    <!--<p class="smallFont">-->
+                        <!--5160 Explorer Drive,<br>-->
+                        <!--Unit 34,-->
+                        <!--Mississauga ON L4W 4T7<br>-->
+                        <!--Tel : 1-905 629 9797-->
+                        <!--Fax : 1-905 629 9711<br>-->
+                        <!--E-Mail : travel@absacanada.com<br>-->
+                    <!--</p>-->
+                    <!--<h4>Al Barrak Travel & Tourism – Dubai, U.A.E</h4>-->
+                    <!--<p class="smallFont">-->
+                        <!--Al Barrak Travel & Tourism – Dubai-->
+                        <!--Behind Al Futtaim Mosque,-->
+                        <!--Naif Road-->
+                        <!--P.O Box No. 83835, Dubai, UAE<br>-->
+                        <!--Tel : +971 4 3944255 Fax No. +971 4 3208809-->
+                        <!--E-Mail : travel.mgr@albarrak.ae<br>-->
+                    <!--</p>-->
+                </div>
+            </div>
+        </div>
+        <!--Map here-->
+        <div class="eight wide column">
+            <!--<h5 class="ui">-->
+            <!--MAP Will Be Here .-->
+            <!--</h5>-->
+            <div id="locationMap"></div>
+            <!--<iframe class="locationMap" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14480.205262265259!2d67.0641803!3d24.8620969!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1518421263629" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        </div>
+    </div>
+</div>
+<!--Footer Quick Links-->
+<div class="ui inverted vertical footer segment dark-grey shadowed">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="four wide column">
+                <h3 class="ui inverted header">ABSA GROUP</h3>
+                <hr>
+                <p>ABSA Group was incorporated as a private limited company in 1985,
+                    founded by an enterprising Saudi Marine Captain Ibrahim Barrak Al Omani
+                </p>
+            </div>
+            <div class="four wide column">
+                <h3 class="ui inverted header">QUICK LINKS</h3>
+                <hr>
+                <div class="ui bulleted list">
+                    <div class="item"><a href="https://absaco.com/index.html#aboutSection">About</a></div>
+                    <div class="item"><a href="https://absaco.com/index.html#serviesSection">Services</a></div>
+                    <!-- <div class="item"><a href="https://absaco.com/offices/modernFreightLogistics.html">Modern Freight Logistics</a></div> -->
+                    <!-- <div class="item"><a href="https://absaco.com/offices/modernMaritimeLogistics.html">Modern Maritime Logistics</a></div> -->
+                    <!-- <div class="item"><a href="https://absaco.com/offices/expertMaritimeServices.html">Expert Maritime Services</a></div> -->
+                </div>
+            </div>
+            <div class="four wide column">
+                <h3 class="ui inverted header">SERVICES</h3>
+                <hr>
+                <div class="ui bulleted list">
+                    <div class="item"><a href="https://absaco.com/shipping.html">Shipping</a></div>
+                    <div class="item"><a href="https://absaco.com/transportation.html">Transportation</a></div>
+                    <div class="item"><a href="https://absaco.com/warehouse.html">Warehouse Storage</a></div>
+                    <div class="item"><a href="https://absaco.com/freight.html">Freight Forward</a></div>
+                    <div class="item"><a href="https://absaco.com/terminal.html">Terminal Storage</a></div>
+                    <div class="item"><a href="https://absaco.com/logistics.html">Logistics</a></div>
+                    <div class="item"><a href="https://absaco.com/trading.html">Projects</a></div>
+                    <div class="item"><a href="https://absaco.com/airFreight.html">Air Freight</a></div>
+                    <div class="item"><a href="https://absaco.com/tourAndTravel.html">ABSA Tour & Travel</a></div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h3 class="ui inverted header">OFFICE TIMINGS</h3>
+                <hr>
+                <table class="ui inverted table">
+                    <tbody>
+                    <tr>
+                        <td>Sun-Thu</td>
+                        <td>08-00</td>
+                        <td>17-00</td>
+                    </tr>
+                    <tr>
+                        <td>Fri - Sat</td>
+                        <td></td>
+                        <td>Closed</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div style="cursor: pointer" onclick="verifySeal();"><img src="https://www.absaco.com/images/ssl-certificate-seal.png" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Super Bottom Stripe-->
+<div class="ui vertical Stacked bordered shadowed">
+    <!--Bottom Most Stripe-->
+    <div class="row">
+        <div class="sixteen wide column text-center bordered">
+            <div class="ui segment dark-teal text-center">
+                <h5>
+                    Copyright © 2019 ABSA Group. all rights reserved. -: ver.1.12 beta :-
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SSL-->
+<script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=WzxO05J5IoTH7oBLJd1G41cltMG9JV93JHkGgynpdIPgacIjfafr6Lf2qIhP"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5b56e26de21878736ba23f73/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+    // Modal
+    $( "#nycDialogBT" ).click(function() {
+
+        $('.ui.modal')
+            .modal({
+                onApprove : function() {
+                }
+            })
+            .modal('show');
+    });
+</script>
+<!--End of Tawk.to Script-->
+

@@ -14,7 +14,7 @@ if (isOnline) {
 var host = window.location.protocol + "//" + window.location.host + selectedServer;
 // alert (host);
 $(window).on('load', function() { // makes sure the whole site is loaded
-    $('#status').fadeOut(); // will first fade out the loading animation
+    //$('#status').fadeOut(); // will first fade out the loading animation
     //Adding Calendars
     // $('#customerShipmentReadyDateCalendar')
     //     .calendar({
@@ -30,8 +30,8 @@ $(window).on('load', function() { // makes sure the whole site is loaded
             // alert("Form Submission stopped.");
         });
     });
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({'overflow':'visible'});
+    //$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    //$('body').delay(350).css({'overflow':'visible'});
     // $('.ui.dropdown')
     //     .dropdown();
         // Form Validation Queries
@@ -291,8 +291,12 @@ header.AttributeManager = {
     }
 };
 
-$(document).ready(function() {
+ $(document).ready(function() {
+    
 //          UI Initialize
+$('#status').fadeOut(); // will first fade out the loading animation
+$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+$('body').delay(350).css({'overflow':'visible'});
 
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
@@ -328,7 +332,7 @@ $(document).ready(function() {
     $('#footer').load(host + 'dist/temps/footer.html', function () {
         // Google Maps
         $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAHeG6ZvA8UpuRWiufliGCw6yiRqD_15PE", function () {
-            <!--Google's Map-->
+            //Google's Map
             var locations = [
                 ['Headoffice', 26.432926, 50.124462],
                 ['canada', 43.661502, -79.598483],
@@ -564,4 +568,4 @@ $(document).ready(function() {
 //    MAIN ANCHOR SNIPPET
 
     });
-});
+ });
