@@ -14,55 +14,56 @@
     <link href="stylesheets/default.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link href="stylesheets/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/owl.theme.green.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/owl.carousel.css" rel="stylesheet" type="text/css" /> 
+    <link href="stylesheets/owl.theme.green.min.css" rel="stylesheet" type="text/css" /> 
     <link href="stylesheets/aos.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-    <script src="dist/owl.carousel.js" ></script>
+    <!-- <script src="dist/owl.carousel.js" ></script>
     <script src="dist/owl.support.js" ></script>
-    <script src="dist/owl.autoplay.js" ></script>
+    <script src="dist/owl.autoplay.js" ></script> -->
     <!--Adding Firebase-->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="dist/jquery/jquery.min.js"></script>
+    <script src="dist/parallax.min.js"></script>
   </head>
   <body>
-    <!--Hidden Main Header-->
-    <div id="sideBar" ></div>
     <!-- Preloader -->
     <div id="preloader">
         <!--<h2>Loading...</h2>-->
         <!--<img src="https://absaco.com/images/logo.png"  alt="ABSA Group">-->
         <div id="status">&nbsp;</div>
     </div>
+    <!--Hidden Main Header-->
+    <div id="sideBar"></div>
     <!--Page Contents-->
     <div class="pusher">
       <div class="ui page dimmer">
-            <div class="content">
-                <div class="center">Hello</div>
-            </div>
+        <div class="content">
+            <div class="center"></div>
+        </div>
       </div>
       <!--Marquee Stripe-->
       <div id="header"></div>
-        <!--About Section View-->
-      <div id="aboutSection"></div>
       <!--First Slider-->
       <!--Landing First View-->
-      <div class="ui inverted vertical center aligned" >
+      <div class="ui inverted vertical  center aligned" >
         <!--<div class="ui container">-->
           <!--Navigation -->
           <!--<div id="navBar"></div>-->
         <!--</div>-->
           <!-- <div class="slick-carousel owl-carousel owl-theme" > -->
-          <div class="slick-carousel" >
+          <div class="slick-carousel">
               <div> <div class="floated"><h1 class="boldFont bigHeading">TRANSPORTATION</h1></div> <img class="lazyload" style="width: 100% !important;" src="images/loading.gif" data-src="images/broadcast/trucks.jpg" /> </div>
               <div> <div class="floated"><h1 class="boldFont bigHeading">SHIPPING</h1></div><img class="lazyload" style="width: 100% !important;" src="images/loading.gif" data-src="images/broadcast/shipping.jpg" /> </div>
               <div> <div class="floated"><h1 class="boldFont bigHeading">GLOBAL FREIGHT FORWADER</h1></div><img class="lazyload" style="width: 100% !important;" src="images/loading.gif" data-src="images/broadcast/containers.jpg"  /> </div>
               <div> <div class="floated"><h1 class="boldFont bigHeading">WAREHOUSE & STORAGE</h1></div><img class="lazyload" style="width: 100% !important;" src="images/loading.gif" data-src="images/broadcast/storage.jpg" /> </div>
           </div>
       </div>
+        <!--About Section View-->
+      <div id="aboutSection"></div>
       <div class="ui vertical segment">
         <div class="ui middle aligned stackable grid container">
           <div class="row">
@@ -89,15 +90,17 @@
           <!--Slider-->
               <div class="ui grid container">
                   <!--Left About Slide-->
-                  <div class=" ui sixteen wide mobile sixteen wide tablet five wide computer column">
-                      <div class="main-carousel owl-carousel owl-theme">
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A1.jpg" /> </div>
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A2.jpg" /> </div>
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A3.jpg" /> </div>
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A4.jpg" /> </div>
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A5.jpg" /> </div>
-                          <div> <img class="lazyload" src="images/loading.gif" data-src="images/about/A7.jpg" /> </div>
-                      </div>
+                  <!-- <div class="ui eight width mobile eight wide tablet five wide computer column"> -->
+                    <div class=" ui sixteen wide mobile sixteen wide tablet five wide computer column">
+                      <!-- <div class="main-carousel owl-carousel owl-theme">slick-carousel -->
+                    <div class="slick-Sec-carousel">
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A1.jpg" /> 
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A2.jpg" /> 
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A3.jpg" /> 
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A4.jpg" /> 
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A5.jpg" /> 
+                        <img class="lazyload" width="100" src="images/loading.gif" data-src="images/about/A7.jpg" /> 
+                    </div>
                   </div>
                   <!--About Text-->
                   <div class="sixteen wide mobile eleven wide computer column relaxed">
@@ -106,51 +109,52 @@
                           <!--Four Columns in about Defination-->
                           <div class="sixteen wide column">
                               <!-- Under the professional leadership of Capt. Ibrahim Barrak Al Barrak Group has achieved phenomenal growth. Group’s goal has always been to provide excellent customized / competitive services to clients and strictly abide by group’s Chairman motto of “FAIR PLAY” and “CLIENT SUPREME”. -->
-                          </div>
-                      </div>
-                      <div class="ui grid very padded statistics">
-                          <!--Four Columns in about Defination-->
-                          <div class="eight wide mobile four wide computer column">
-                            <div class="statistic">
-                              <div class="value">
-                                  <i class="plane icon"></i>
-                              </div>
-                              <div class="label">
-                                  Air Freight
-                              </div>
+                              <div class="ui grid padded statistics">
+                                <!--Four Columns in about Defination-->
+                                <div class="eight wide mobile four wide computer column">
+                                  <div class="statistic">
+                                    <div class="value">
+                                        <i class="plane icon"></i>
+                                    </div>
+                                    <div class="label">
+                                        Air Freight
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="eight wide mobile four wide computer column">
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="shipping icon"></i>
+                                        </div>
+                                        <div class="label">
+                                            Transport
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="eight wide mobile four wide computer column">
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="ship icon"></i>
+                                        </div>
+                                        <div class="label">
+                                            Sea Freight
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="eight wide mobile four wide computer column">
+                                  <div class="statistic">
+                                    <div class="value">
+                                        <i class="dropbox icon"></i>
+                                    </div>
+                                    <div class="label">
+                                        Warehouse & Storage
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                           </div>
-                          <div class="eight wide mobile four wide computer column">
-                              <div class="statistic">
-                                  <div class="value">
-                                      <i class="shipping icon"></i>
-                                  </div>
-                                  <div class="label">
-                                      Transport
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="eight wide mobile four wide computer column">
-                              <div class="statistic">
-                                  <div class="value">
-                                      <i class="ship icon"></i>
-                                  </div>
-                                  <div class="label">
-                                      Sea Freight
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="eight wide mobile four wide computer column">
-                            <div class="statistic">
-                              <div class="value">
-                                  <i class="dropbox icon"></i>
-                              </div>
-                              <div class="label">
-                                  Warehouse & Storage
-                              </div>
-                            </div>
-                          </div>
                       </div>
+                      
                   </div>
               <!--<div class="row">-->
                   <!--<div class="center aligned column">-->
@@ -377,7 +381,7 @@
             <!--Features-->
         </div>
         <!--Counter Slide-->
-      <div class="ui vertical parallax-window" data-parallax="scroll" data-image-src="images/counterBg.jpg" id="counters">
+      <div class="ui vertical" data-z-index="1" data-parallax="scroll" data-image-src="images/counterBg.jpg" id="counters">
             <div class="ui grid large inverted statistics">
                 <!--Four Columns in about Defination-->
                 <div class="sixteen wide mobile six wide tablet four wide computer column">
@@ -1114,7 +1118,7 @@
                             MEMBERS
                         </h1>
                         <!--Members Carousels-->
-                        <div class="members-carousel owl-carousel owl-theme">
+                        <div class="slick-Mem-carousel">
                             <img class="lazyload" loading="eager" src="images/loading.gif" data-src="images/members/olgn.jpg" />
                             <img class="lazyload" loading="lazy" src="images/loading.gif" data-src="images/members/apln.jpg" />
                             <img class="lazyload" loading="lazy" src="images/loading.gif" data-src="images/members/ifln.jpg" />

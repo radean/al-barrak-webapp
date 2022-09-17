@@ -189,14 +189,18 @@ $.getScript(host + "dist/aos.js", function (){
     AOS.init();
 });
 $.getScript(host + "dist/owl.carousel.js", function (){
-    $('.main-carousel').owlCarousel({
+    var owl = $('.main-carousel').owlCarousel({
         items:1,
+        slidesToShow: 1,
+        autoHeight:true,
+        slideBy:1,
+        dots: true,
+        merge:true,
+        nav:true,   
         autoplay: true,
-        autoplayTimeout: 3500,
+        autoWidth: false,
         loop:true,
-        margin:0,
-        nav:false,
-        dots: false
+        margin:0
     });
 //  Members Carousel
     $('.members-carousel').owlCarousel({
@@ -291,12 +295,78 @@ header.AttributeManager = {
     }
 };
 
- $(document).ready(function() {
+$(document).ready(() => {
     
 //          UI Initialize
-$('#status').fadeOut(); // will first fade out the loading animation
-$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-$('body').delay(350).css({'overflow':'visible'});
+    $('#status').fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(350).css({'overflow':'visible'});
+
+    // SettingUp Carousel By Slick
+    $('.slick-carousel').slick({
+        infinite: true,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+        autoplaySpeed: 6000,
+    });
+    $('.slick-Sec-carousel').slick({
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false,
+        cssEase: 'linear',
+        autoplaySpeed: 6000,
+        adaptiveHeight: true
+    });
+    // Member
+    $('.slick-Mem-carousel').slick({
+        infinite: true,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerPadding: '50px',
+        fade: false,
+        cssEase: 'linear',
+        autoplaySpeed: 6000,
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+    });
+    
+    //Navigation bar
+    $('#sideBar').load(host + 'dist/temps/sideBar.html', function () {
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item')
+    });
 
     $('#header').load(host + 'dist/temps/header.html', function () {
         // fix menu when passed
@@ -322,12 +392,7 @@ $('body').delay(350).css({'overflow':'visible'});
             return false;
         });
     });
-//            Navigation bar
-    $('#sideBar').load(host + 'dist/temps/sideBar.html', function () {
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-    });
+
 //            Footer
     $('#footer').load(host + 'dist/temps/footer.html', function () {
         // Google Maps
@@ -568,4 +633,4 @@ $('body').delay(350).css({'overflow':'visible'});
 //    MAIN ANCHOR SNIPPET
 
     });
- });
+});
