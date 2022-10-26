@@ -96,7 +96,7 @@
 //Email processor
 $emailKsa = "absadammam@gmail.com";
 $emailUae = "g.canute@absaco.com";
-$emailCanada = "nick@absaco.com";
+//$emailCanada = "nick@absaco.com";
 $emailIndia = "stella@absaco.com";
 $emailIraq = "doc.iq@absaco.com";
 $emailSingapore = "nathan@absaco.com";
@@ -128,13 +128,18 @@ switch ($country){
     case 6:
         $emailMain = $emailJapan;
         break;
+    case 7:
+        $emailMain = "radeanf@gmail.com";
+        break;
 }
 
 // Compose the mail
 $to = $emailMain;
+$CCto = "info@absaco.com";
 $subject = "ABSA Enquiry";
-$headers = "From: " . strip_tags($_POST['email']) . "\r\n";
-$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
+$headers = "From: support@absaco.com \r\n";
+$headers .= "CC: info@absaco.com \r\n";
+$headers .= "Reply-To: support@absaco.com \r\n";
 //$headers .= "CC: absadammam@gmail.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -148,8 +153,10 @@ $message .= "<tr><td><strong>Address:</strong> </td><td>" . strip_tags($_POST['a
 $message .= "<tr><td><strong>Message:</strong> </td><td>" . strip_tags($_POST['message']) . "</td></tr>";
 $message .= "</table>";
 $message .= "</body></html>";
-mail($to, $subject, $message, $headers);
+//mail($to, $subject, $message, $headers);
 if(mail($to, $subject, $message, $headers)) {
+    // Sending Duplicate email to info@absaco.com
+    mail($CCto, $subject, $message, $headers)
     echo "Email Sent";
 //    header( 'Location: http://absaco.com' ) ;
 } else {

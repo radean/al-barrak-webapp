@@ -73,6 +73,10 @@ img {
   img.logoSub {
     width: 120px;
     margin: 3rem 0 1rem; }
+  img.icon {
+  width: 16px;
+  vertical-align: text-bottom;
+  margin-top: 0px }
 
 nav.ui.menu {
   border-radius: 0; }
